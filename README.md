@@ -36,11 +36,11 @@ Then, you need to register handles to certain node types:
 handles.registerHandle({
     positionX: "left",          //horizontal position of the handle  (left | center | right)
     positionY: "center",        //vertical position of the handle  (top | center | bottom)
-    color: "#48FF00",           //color of the handle 
+    color: "#48FF00",           //color of the handle
     type: "some_type",          //stored as data() attribute, can be used for styling            
-    single: true,               //wheter only one edge of this type can start from same node (default false) 
+    single: true,               //wheter only one edge of this type can start from same node (default false)
     nodeTypeNames: ["type2"]    //which types of nodes will contain this handle
-    noMultigraph: false         //whereter two nodes can't be connected with multiple edges (does not consider orientation) 
+    noMultigraph: false         //whereter two nodes can't be connected with multiple edges (does not consider orientation)
 });
 
 handles.registerHandle({...});
@@ -56,3 +56,8 @@ cy.add({
 ```
 ![Screenshot](http://i.imgbox.com/drCuXQqu.png)
 ![Screenshot](http://i.imgbox.com/23jr7qPa.png)
+
+Todos:
+*[ ] Update to newest Cytoscape.js versions
+*[ ] Refactor repo to be able to `npm` it
+*[ ] include linting plugins etc for development
